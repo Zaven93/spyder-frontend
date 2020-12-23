@@ -1,3 +1,4 @@
+import 'animate.css/animate.min.css'
 import FirstSection from './components/FirstSection'
 import SecondSection from './components/SecondSection'
 import ThirdSection from './components/ThirdSection'
