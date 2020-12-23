@@ -4,6 +4,7 @@ import './style.scss'
 
 const FourthSection = () => {
     const [params, setParams] = useState({
+        name: '',
         email: '',
         url: ''
     })
@@ -26,6 +27,7 @@ const FourthSection = () => {
         })
         setLoading(false)
         setParams({
+            name: '',
             email: '',
             url: ''
         })
@@ -36,7 +38,13 @@ const FourthSection = () => {
             <h1>Try it for free</h1>
             <form onSubmit={handleSubmit}>
                 <div className="input-group">
-                    <input type="text" placeholder="Name" />
+                    <input
+                        name="name"
+                        value={params.name}
+                        type="text"
+                        placeholder="Name"
+                        onChange={handleChange}
+                    />
                     <input
                         name="email"
                         value={params.email}
