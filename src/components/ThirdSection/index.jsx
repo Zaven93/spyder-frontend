@@ -33,6 +33,7 @@ const ThirdSecond = () => {
             <Fade left>
                 <div className="image"></div>
             </Fade>
+            <div className="distortion"></div>
         </div>
     )
 }
