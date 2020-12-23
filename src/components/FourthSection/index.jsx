@@ -7,22 +7,26 @@ const FourthSection = () => {
         email: '',
         url: ' '
     })
+    const [loading, setLoading] = useState(false)
 
     const handleChange = (e) => setParams({ ...params, [e.target.name]: e.target.value })
 
     const handleSubmit = async (e) => {
+        if (loading) return
         e.preventDefault()
-        await axios.get(params.url.split('?')[0], {
+        setLoading(true)
+        const sheetId = params.url?.split('/d/')[1]?.split('/')[0]
+        if (!sheetId) return setLoading(false)
+        console.log(sheetId) 
+        await axios.get('http://localhost:8000/v1/load-sheet', {
             params: {
-                sheetId: params.url.split('?')[1].split('=')[1],
+                sheetId,
                 email: params.email
             }
         })
+        setLoading(false)
     }
 
-    console.log('Params data Zaven', params)
-    console.log('Parsed url', params.url.split('?')[0])
-    console.log('Parse sheetid', params.url.split('?')[1].split('=')[1])
     return (
         <div className="fourth-section-container">
             <h1>Try it for free</h1>
@@ -44,7 +48,7 @@ const FourthSection = () => {
                     type="text"
                     onChange={handleChange}
                 />
-                <button>LAUNCH</button>
+                <button style={{background: loading ? '#ffffff' : '#f78a35'}}>LAUNCH</button>
             </form>
         </div>
     )
