@@ -9,7 +9,7 @@ const FifthSection = () => {
                 <p>
                     Team of passionate individuals who make a significant difference in no time. Our
                     goal is to make it simple to manage your everyday processes so you can have more
-                    articles published, close more dealsand get things done.
+                    articles published, close more deals and get things done.
                 </p>
             </div>
             <div className="team-container">
