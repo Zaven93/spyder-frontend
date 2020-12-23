@@ -17,8 +17,8 @@ const FourthSection = () => {
         setLoading(true)
         const sheetId = params.url?.split('/d/')[1]?.split('/')[0]
         if (!sheetId) return setLoading(false)
-        console.log(sheetId) 
-        await axios.get('https://stormy-headland-86460.herokuapp.com/v1/load-sheet/v1/load-sheet', {
+        console.log(sheetId)
+        await axios.get('https://stormy-headland-86460.herokuapp.com/v1/load-sheet', {
             params: {
                 sheetId,
                 email: params.email
@@ -48,7 +48,7 @@ const FourthSection = () => {
                     type="text"
                     onChange={handleChange}
                 />
-                <button style={{background: loading ? '#ffffff' : '#f78a35'}}>LAUNCH</button>
+                <button style={{ opacity: loading ? '0.5' : '1' }}>LAUNCH</button>
             </form>
         </div>
     )
