@@ -20,9 +20,6 @@ const FourthSection = () => {
         })
     }
 
-    console.log('Params data Zaven', params)
-    console.log('Parsed url', params.url.split('?')[0])
-    console.log('Parse sheetid', params.url.split('?')[1].split('=')[1])
     return (
         <div className="fourth-section-container">
             <h1>Try it for free</h1>
