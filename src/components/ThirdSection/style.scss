@@ -1,0 +1,111 @@
+.third-section-container {
+    padding-top: 28px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 20px;
+        color: #3a3a3a;
+        margin-bottom: 14px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+        }
+
+        .features-subcontainer {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+
+    div {
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+        padding: 0;
+        div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            .numbers {
+                height: 22px;
+                min-width: 18px;
+                background: #3dadcf;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                color: #ffffff;
+                margin-right: 10px;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 17px;
+                color: rgba(58, 58, 58, 0.7);
+            }
+        }
+    }
+
+    .image {
+        width: 170px;
+        height: 170px;
+        background: url('../../img/section_3_mobile_bg.png');
+        background-position: center;
+        background-size: cover;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 760px) {
+    .third-section-container {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        .features {
+            h1 {
+                font-size: 48px;
+                line-height: 53px;
+            }
+            .features-subcontainer {
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: 18px;
+            }
+        }
+
+        div {
+            div {
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .image {
+            width: 445px;
+            height: 425px;
+            background: url('../../img/section_3_web.png');
+            background-position: center;
+            background-size: cover;
+            margin-right: unset;
+            margin-left: unset;
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,317 @@
+.fifth-section-container {
+    > .header {
+        padding-top: 25px;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        > h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 20px;
+            color: #3a3a3a;
+        }
+
+        > p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(58, 58, 58, 0.7);
+            margin-bottom: 35px;
+        }
+    }
+
+    .team-container {
+        background: #f6f6f6;
+        padding-top: 25px;
+        padding-bottom: 30px;
+        text-align: center;
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 20px;
+            color: #3a3a3a;
+            margin-bottom: 25px;
+        }
+        .team-images {
+            padding-left: 35px;
+            padding-right: 35px;
+            .first-row {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+
+                > div {
+                    h1 {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 700;
+                        font-size: 11px;
+                        line-height: 20px;
+                        margin: 0;
+                    }
+
+                    p {
+                        display: flex;
+                        flex-direction: column;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 9px;
+                        line-height: 11px;
+                        color: rgba(58, 58, 58, 0.7);
+                        margin-top: 0;
+                    }
+                    &:first-of-type {
+                        .avatar {
+                            width: 65px;
+                            height: 65px;
+                            display: inline-block;
+                            border-radius: 50%;
+                            background: url('../../img/image_1.png');
+                            background-size: cover;
+                            background-position: center;
+                            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                            filter: grayscale(100%);
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        .avatar {
+                            width: 65px;
+                            height: 65px;
+                            display: inline-block;
+                            border-radius: 50%;
+                            background: url('../../img/image_2.png');
+                            background-size: cover;
+                            background-position: center;
+                            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                            filter: grayscale(100%);
+                        }
+                    }
+
+                    &:last-of-type {
+                        .avatar {
+                            width: 65px;
+                            height: 65px;
+                            display: inline-block;
+                            border-radius: 50%;
+                            background: url('../../img/image_3.png');
+                            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                            filter: grayscale(100%);
+                            background-size: 90px;
+                            background-position-x: -20px;
+                        }
+                    }
+                }
+            }
+
+            .second-row {
+                display: flex;
+                justify-content: space-between;
+
+                > div {
+                    h1 {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 700;
+                        font-size: 11px;
+                        line-height: 20px;
+                        margin: 0;
+                    }
+
+                    p {
+                        display: flex;
+                        flex-direction: column;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 9px;
+                        line-height: 11px;
+                        color: rgba(58, 58, 58, 0.7);
+                        margin-top: 0;
+                    }
+                    &:first-of-type {
+                        .avatar {
+                            width: 65px;
+                            height: 65px;
+                            display: inline-block;
+                            border-radius: 50%;
+                            background: url('../../img/image_4.png');
+                            background-size: cover;
+                            background-position: center;
+                            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                            filter: grayscale(100%);
+                        }
+
+                        p {
+                            flex-direction: row;
+                            span:first-of-type {
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        .avatar {
+                            width: 65px;
+                            height: 65px;
+                            display: inline-block;
+                            border-radius: 50%;
+                            background: url('../../img/image_5.png');
+                            background-size: cover;
+                            background-position: center;
+                            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                            filter: grayscale(100%);
+                        }
+                    }
+
+                    &:last-of-type {
+                        .avatar {
+                            width: 65px;
+                            height: 65px;
+                            display: inline-block;
+                            border-radius: 50%;
+                            background: url('../../img/image_6.png');
+                            background-size: cover;
+                            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                            filter: grayscale(100%);
+                            background-position-y: -5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .fifth-section-container {
+        > .header {
+            padding-top: 50px;
+            > h1 {
+                font-size: 48px;
+                line-height: 53px;
+                margin-bottom: 0;
+            }
+
+            > p {
+                max-width: 760px;
+                font-size: 18px;
+                line-height: 33px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 45px;
+            }
+        }
+
+        .team-container {
+            padding-top: 50px;
+
+            .team-images {
+                max-width: 1100px;
+                margin-left: auto;
+                margin-right: auto;
+
+                .first-row {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+
+                    > div {
+                        h1 {
+                            font-size: 24px;
+                            line-height: 44px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            line-height: 33px;
+                            flex-direction: row;
+                            justify-content: center;
+
+                            span {
+                                &:first-of-type {
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                        &:first-of-type {
+                            .avatar {
+                                width: 220px;
+                                height: 220px;
+                            }
+                        }
+
+                        &:nth-of-type(2) {
+                            .avatar {
+                                width: 220px;
+                                height: 220px;
+                            }
+                        }
+
+                        &:last-of-type {
+                            .avatar {
+                                width: 220px;
+                                height: 220px;
+                                background-size: cover;
+                                background-position: center;
+                            }
+                        }
+                    }
+                }
+
+                .second-row {
+                    display: flex;
+                    justify-content: space-between;
+
+                    > div {
+                        h1 {
+                            font-size: 24px;
+                            line-height: 44px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            line-height: 33px;
+                            flex-direction: row;
+                            justify-content: center;
+                        }
+                        &:first-of-type {
+                            .avatar {
+                                width: 220px;
+                                height: 220px;
+                            }
+
+                            p {
+                                flex-direction: row;
+                                span:first-of-type {
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+
+                        &:nth-of-type(2) {
+                            .avatar {
+                                width: 220px;
+                                height: 220px;
+                            }
+                        }
+
+                        &:last-of-type {
+                            .avatar {
+                                width: 220px;
+                                height: 220px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            h1 {
+                font-size: 48px;
+                line-height: 53px;
+                margin-bottom: 65px;
+            }
+        }
+    }
+}
