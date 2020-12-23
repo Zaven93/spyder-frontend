@@ -5,7 +5,7 @@ import './style.scss'
 const FourthSection = () => {
     const [params, setParams] = useState({
         email: '',
-        url: ' '
+        url: ''
     })
     const [loading, setLoading] = useState(false)
 
@@ -25,6 +25,10 @@ const FourthSection = () => {
             }
         })
         setLoading(false)
+        setParams({
+            email: '',
+            url: ''
+        })
     }
 
     return (
