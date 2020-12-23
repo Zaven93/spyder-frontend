@@ -52,7 +52,7 @@ const FifthSection = () => {
                             <span className="avatar"></span>
                             <h1>Lilit</h1>
                             <p>
-                                <span>Copyrighter</span>
+                                <span>Copywrighter</span>
                             </p>
                         </div>
                         <div>
